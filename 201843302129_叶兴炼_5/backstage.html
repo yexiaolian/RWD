@@ -1,0 +1,490 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>商务控制后台</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Menu</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="backstage.html">Backstage</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="container-fluid md-4 main">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="far fa-money-bill-alt fa-4x text-success mr-2 d-none d-sm-blk"></div>
+                        <div class="text-center w-100">
+                            <div class="h5">今日营收</div>
+                            <div class="h3">192,000元</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-user-friends fa-4x text-primary mr-2"></div>
+                        <div class="text-center w-100">
+                            <h5>会员增加</h5>
+                            <h3 class="display-4">172人</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-id-card fa-4x text-primary mr-2"></div>
+                        <div class="text-center w-100">
+                            <h5>订单数</h5>
+                            <h3 class="display-4">320单</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-box fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>待出货数</h5>
+                            <h3 class="display-4">120件</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+    <section class="container-fluid mt-4">
+        <div class="row mb-5">
+            <!-- <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="text-center w-100">
+                            <div class="h5">目前线上人数</div>
+                            <div class="h3" style="font-size:60px;">99人</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progress" style="width:30%" aria-valuenow="30"
+                                    aria-valuemin="70" aria-valuemax="100">桌机</div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width:70%"
+                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">行动装置</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-lg-8">
+                <div class="card h-100">
+                    <div class="card header bg-dark text-light" style="font-weight:bold;">
+                        新进订单
+                    </div>
+                    <div class="card body">
+                        <div class="text-right">
+                            <a href="" class="btn btn-outline-success">订单管理</a>
+                        </div>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">来源</th>
+                                    <th scope="col">姓名</th>
+                                    <th scope="col">货品</th>
+                                    <th scope="col" class="text-right pr-5">价格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>官网</td>
+                                    <td>Kerun</td>
+                                    <td>Dx Armchair X</td>
+                                    <td class="text-right">88.00</td>
+                                </tr>
+                                <tr>
+                                    <td>官网</td>
+                                    <td>Kerun</td>
+                                    <td>Just Daffline Chair</td>
+                                    <td class="text-right">73.00</td>
+                                </tr>
+                                <tr>
+                                    <td>官网</td>
+                                    <td>Kerun</td>
+                                    <td>Strive Shoulder Pack</td>
+                                    <td class="text-right">150.0</td>
+                                </tr>
+                                <tr>
+                                    <td>官网</td>
+                                    <td>Kerun</td>
+                                    <td>Aliqua Definer Chair</td>
+                                    <td class="text-right">45.00</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right">总营收</td>
+                                    <td class="text-right">356.00元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row mb-4">
+        <section class="col-lg-8">
+            <div class="card rounded-0">
+                <div class="card-header">
+                    用户来源
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <canvas id="barCanvas"></canvas>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <h4>Details</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempora aliquam ipsam adipisci molestias assumenda minima
+                                asperiores, nostrum, iure temporibus quae ipsum aperiam
+                                perspiciatis placeat architecto reiciendis exercitationem
+                                corporis quo deleniti!</p>
+                            <h6 class="mt-3">Google</h6>
+                            <div class="progress">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="col-lg-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    小标题
+                </div>
+                <div class="card-body d-flex align-items-center">
+                    <canvas class="chart-item"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card rounded-0">
+        <div class="card-header">
+            表头
+        </div>
+        <div class="card-body">
+            <div class="d-flex">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="month" class="sr-only">月份</label>
+
+                        <select name="" id="month" class="form-control form-control-sm">
+                            <option value="9">9月</option>
+                            <option value="10">10月</option>
+                            <option value="11">11月</option>
+                            <option value="12">12月</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ml-auto">
+                    <a href="" class="btn btn-outline-secondary btn-sm">下载报表</a>
+                    <a href="" class="btn btn-outline-secondary btn-sm">订单管理</a>
+                </div>
+
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">日期</th>
+                        <th>订单数</th>
+                        <th>退货数</th>
+                        <th>出货数</th>
+                        <th width="15%">有问题货品</th>
+                        <th width="150">营业额</th>
+                        <th width="150">净利润</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">9/1</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/2</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/3</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/4</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/5</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/6</th>
+                        <td>300</td>
+                        <td>1</td>
+                        <td>250</td>
+                        <td>3</td>
+                        <td class="text-right">256,000</td>
+                        <td class="text-right">168,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" class="text-right">月总营收</td>
+                        <td class="text-right">3,750,500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="text-right">月总盈利</td>
+                        <td class="text-right">2,140,500</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <footer class="py-3 bg-light">
+        <div class="d-flex">
+            <div class="ml-5">
+                <p>© Corpright 2012 粤台学院</p>
+            </div>
+            <div class="ml-5">
+                <a href="">GitHub</a>
+                <a href="">FaceBook</a>
+                <a href="">About</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/ulg/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 編輯的 Modal 事件
+        $('#editModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+            var title = button.data('title') // 使用 data-* 來取得特定內容
+
+            var modal = $(this)
+            modal.find('.modal-title').text(title) // 寫入資料
+        });
+
+        $('#removeModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+            var title = button.data('title') // 使用 data-* 來取得特定內容
+
+            var modal = $(this)
+            modal.find('.modal-title').text('確認' + title) // 寫入資料
+        })
+    });
+</script>
+<script>
+    window.chartColors = {
+        red: 'rgb(255, 99, 132)',
+        orange: 'rgb(255, 159, 64)',
+        yellow: 'rgb(255, 205, 86)',
+        green: 'rgb(75, 192, 192)',
+        blue: 'rgb(54, 162, 235)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(201, 203, 207)'
+    };
+
+    var randomScalingFactor = function () {
+        return Math.round(Math.random() * 100);
+    };
+
+    var config = {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                ],
+                backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.orange,
+                    window.chartColors.yellow,
+                    window.chartColors.green,
+                    window.chartColors.blue,
+                ],
+                label: 'Dataset 1'
+            }],
+            labels: [
+                "Red",
+                "Orange",
+                "Yellow",
+                "Green",
+                "Blue"
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    };
+
+    // bar
+    var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var colors = Chart.helpers.color;
+    var barChartData = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: 'Dataset 1',
+            backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.red,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }, {
+            label: 'Dataset 2',
+            backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.blue,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }]
+
+    };
+
+    window.onload = function () {
+        // pie
+        document.querySelectorAll('.chart-item').forEach(function (item) {
+            config.data.datasets.forEach(function (dataset) {
+                dataset.data = dataset.data.map(function () {
+                    return randomScalingFactor();
+                });
+            });
+            var ctx = item.getContext("2d");
+            window.myPie = new Chart(ctx, config);
+        })
+
+        // bar
+        var barCtx = document.getElementById("barCanvas").getContext("2d");
+        window.myBar = new Chart(barCtx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Chart.js Bar Chart'
+                }
+            }
+        });
+
+    };
+</script>
+
+</html>

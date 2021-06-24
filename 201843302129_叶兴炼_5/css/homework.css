@@ -1,0 +1,72 @@
+.dropdown>button:focus{
+    box-shadow: 0 0 0 0rem !important;
+}
+/*购物车按钮透明背景色*/
+.btn-cart{
+    background-color: transparent;
+    position: relative;
+}
+/*购物车上面的数字*/
+.dropdown .btn-cart .badge{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+/*展开时往左边*/
+.dropdown-menu-right{
+    right: 0px;
+    left: auto;
+}
+
+.jumbotron-bg{
+    background-image: url('https://pic.netbian.com/uploads/allimg/170908/192020-15048696203c51.jpg');
+    background-size: cover;
+    /*背景图会尽量完整呈现*/
+    background-position: center center;
+    /*背景图定义在中间*/
+    min-height: 400px;
+}
+.jumbotron-color{
+    background-color: rgba(226, 221, 221, 0.712);
+    background-size: cover;
+    /*背景图会尽量完整呈现*/
+    background-position: center center;
+    /*背景图定义在中间*/
+    min-height: 400px;
+}
+/*设置半透明色彩0~1，255白色，0是黑色*/
+.bg-lighter{
+   background-color: rgba(255, 255, 255, .65);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    /*0为水平移动 3px垂直 5px扩散 rgba(0, 0, 0, .16)*/
+    transition: box-shadow .3s;
+}
+div{
+    display: inline;
+}
+span{
+    color: rgb(233, 163, 13);
+}
+.xinwei{
+    font-family: STXinwei
+}
+.block{
+    display: block;
+}
+.font-link{
+    color: rgb(233, 163, 13);
+    text-decoration:none;
+}
+.center{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
